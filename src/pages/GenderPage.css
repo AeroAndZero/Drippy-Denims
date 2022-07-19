@@ -1,0 +1,25 @@
+.prodContainer{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 20px;
+
+    width: 90vw;
+    margin: 10vh auto;
+}
+
+.sortBox{
+    border: 1px solid black;
+    padding: 1.1em;
+}
+
+.sortTitle{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.prodGrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 10vh;
+}

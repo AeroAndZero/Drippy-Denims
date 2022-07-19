@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Last Dream';
+    src: url('../fonts/Last\ Dream.ttf')
+}
+
+.Header{
+    display: grid;
+    padding: 2vh 0;
+    grid-template-columns: 30% 40% 30%;
+    justify-content: center;
+    align-items: center;
+
+    width: 90vw;
+    text-align: center;
+
+    margin: 0 auto;
+}
+
+.Title{
+    font-size: 4em;
+    font-family: 'Last Dream';
+    cursor: pointer;
+}
+
+.Nav{
+    text-align: left;
+}
+
+.Nav > a{
+    text-decoration: none;
+    padding: 0 30px;
+    color: black;
+    font-size: 1em;
+
+    font-family: 'CocoSharp Trial';
+    display: inline-block;
+    position: relative;
+}
+
+.Nav > a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #222222;
+    
+    transition: transform 0.25s ease-out;
+}
+
+.Nav > a:hover:after {
+    transform: scaleX(1);
+}
+
+.User{
+    justify-self: end;
+}
+
+.User > img{
+    display: inline-block;
+    height: 2.5vw;
+    width: 2.5vw;
+
+    padding: 0 20px;
+
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.User > img:hover{
+    opacity: 40%;
+}
+
+.User > img:first-child{
+    border-right: 2px solid black;
+}

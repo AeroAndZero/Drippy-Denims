@@ -1,0 +1,60 @@
+.section{
+    margin: 10vh auto;
+    width: 90vw;
+}
+
+.secTitle{
+    padding: 0 0 10vh;
+    text-align: center;
+    font-size: 2em;
+}
+
+.secGrid{
+    padding: 2vh 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secTrend{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    height: 60vh;
+}
+
+.secTrend > .men, .secTrend > .women{
+    background-image: url('https://images.unsplash.com/photo-1643106037454-05b53d99d330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80');
+    background-size: cover;
+    background-position: start;
+
+    text-align: center;
+    padding-top: 12vh;
+    color: white;
+
+    font-size: 2em;
+    position: relative;
+    cursor: pointer;
+}
+
+.secTrend > .women{
+    background-image: url('https://images.unsplash.com/photo-1654512697735-d7ff21350443?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80');
+    color: black;
+    background-position: 0 -75px;
+}
+
+.women::after, .men::after{
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 8px;
+    position: absolute;
+    width: 100%;
+    background-color: palevioletred;
+
+    transform: scaleX(0);
+    transition: 1s;
+}
+
+.women:hover::after, .men:hover::after{
+    transform: scaleX(1);
+}
