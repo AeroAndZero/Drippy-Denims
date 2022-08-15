@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Drippy Denims
+An online web-store that lets you browse and shop numeruous denims
 
 ## Available Scripts
 
