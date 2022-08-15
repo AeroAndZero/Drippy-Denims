@@ -13,14 +13,14 @@
 }
 
 .productImage{
-    contain: strict;
+    overflow: hidden;
     background-color: #b6b6b6;
 }
 
 .productImage > img{
+    height: 100%;
     width: 100%;
-    position: relative;
-    float: inline-start;
+    object-fit: cover;
 }
 
 .productInfo{
